@@ -1,7 +1,7 @@
 
 # Elk-Stack Project 1
 Project 1
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the deployment pictured above. Alternatively, select portions of the YML file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and are used to generate a live ELK deployment on Azure. They can be used to either recreate the deployment pictured above. Alternatively, select portions of the YML file may be used to install only certain pieces of it, such as Filebeat.
 
 This document contains the following details:
 - Description of the Topology
