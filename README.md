@@ -3,7 +3,7 @@
 ![image](https://user-images.githubusercontent.com/88720568/128892923-a1b302e1-9b1d-4da8-9057-5d22144f86fe.png)
 
 
-The following playbooks and files have been tested and are used to generate a live ELK deployment on Azure. They can be used to either recreate the deployment pictured above. Alternatively, select portions of the YML file may be used to install only certain pieces of it, such as Filebeat.
+The following playbooks and files have been tested and are used to generate a live ELK deployment on Azure. They can be used to recreate the deployment pictured above. Alternatively, select portions of the YML file may be used to install only certain pieces of it, such as Filebeat.
 
 This document contains the following details:
 - Description of the Topology
