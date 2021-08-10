@@ -1,6 +1,6 @@
 
 # Elk-Stack Project 1
-![image](https://user-images.githubusercontent.com/88720568/128892315-720d3966-a5b3-4e2e-a300-80f2a4672da3.png)
+
 
 The following playbooks and files have been tested and are used to generate a live ELK deployment on Azure. They can be used to either recreate the deployment pictured above. Alternatively, select portions of the YML file may be used to install only certain pieces of it, such as Filebeat.
 
