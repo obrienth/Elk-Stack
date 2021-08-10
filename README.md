@@ -1,3 +1,4 @@
+
 # Elk-Stack
 Project 1
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YML file may be used to install only certain pieces of it, such as Filebeat.
@@ -111,7 +112,7 @@ The playbook implements the following tasks:
           - 5044:5044
 ```
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-
+<img width="1792" alt="elk_docker_ps" src="https://user-images.githubusercontent.com/88720568/128868050-fa1030e5-5325-4f2f-bbd1-fecb5402d438.png">
 
 
 ### Target Machines & Beats
