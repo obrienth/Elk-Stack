@@ -7,6 +7,9 @@ This document contains the following details:
 - Description of the Topology
 - Access Policies
 - ELK Configuration
+  - Playbook for automating the ELK machine
+  - Metricbeats Playbook
+  - Filebeat Playbook
   - Beats in Use
   - Machines Being Monitored
 - How to Use the Ansible Build
@@ -81,13 +84,13 @@ The playbook implements the following tasks:
         name: docker
         state: present
 ```   
-- Increases the virtual memory (for the virtual machine we will use to run the ELK server)
+- Increases the virtual memory for the ELK server VM
 ```bash
   # Use command module
     - name: Increase virtual memory
       command: sysctl -w vm.max_map_count=262144
 ```
-- uses sysctl module
+- Uses sysctl module
 ```bash
   # Use sysctl module
     - name: Use more memory
