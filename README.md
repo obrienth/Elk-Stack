@@ -1,7 +1,7 @@
 
-# Elk-Stack
+# Elk-Stack Project 1
 Project 1
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YML file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the deployment pictured above. Alternatively, select portions of the YML file may be used to install only certain pieces of it, such as Filebeat.
 
 This document contains the following details:
 - Description of the Topology
@@ -14,7 +14,7 @@ This document contains the following details:
 
 ### Description of the Topology
 
-The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
+The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the Damn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
 Load balancers help ensure environment availability through distribution of incoming data to web servers. Jump boxes allow for more easy administration of multiple systems 
@@ -56,10 +56,10 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because servcies running can be limited, system installation and update can be streamlined, and processes become more replicable. 
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is examplary because servcies running can be limited, system installation and update can be streamlined, and processes become more replicable. 
 
 The playbook implements the following tasks:
-- installs docker.io, pip3, and the docker module.
+- Installs docker.io, pip3, and the docker module.
 ```bash
   # Use apt module
     - name: Install docker.io
@@ -81,7 +81,7 @@ The playbook implements the following tasks:
         name: docker
         state: present
 ```   
-- increases the virtual memory (for the virtual machine we will use to run the ELK server)
+- Increases the virtual memory (for the virtual machine we will use to run the ELK server)
 ```bash
   # Use command module
     - name: Increase virtual memory
@@ -97,7 +97,7 @@ The playbook implements the following tasks:
         state: present
         reload: yes
 ```
-- downloads and launches the docker container for elk server 
+- Downloads and launches the docker container for elk server 
 ```bash
 # Use docker_container module
     - name: download and launch a docker elk container
@@ -143,12 +143,12 @@ The Filebeat-configuration
 copy /etc/ansible/files/filebeat-config.yml to /etc/filebeat/filebeat.yml
 
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-update filebeat-config.yml -- specify which machine to install by updating the host files with ip addresses of web/elk servers and selecting which group to run on in ansible
+update filebeat-config.yml -- then you will specify which machine to install by updating the host files with ip addresses of web/elk servers and selecting which group to run on in ansible
 
 - _Which URL do you navigate to in order to check that the ELK server is running?
 http://[your.ELK-VM.External.IP]:5601/app/kibana.
 
-filebeats
+Filebeats
 ```bash
 - name: Installing and Launch Filebeat
   hosts: webservers
@@ -182,7 +182,7 @@ filebeats
 
 ```
 
-metricbeats
+Metricbeats
 ```bash
 - name: Install metric beat
   hosts: webservers
