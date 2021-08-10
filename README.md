@@ -48,11 +48,11 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes            | Personal    |
+| Jump Box | Yes            |  72.94.158.224   |
 | Load Balancer | Yes     | Open |
 | Web 1         | No                    |  10.0.0.5                   |
 | Web 2         | No                    |  10.0.0.6                    |
-| ELK Server  |    Yes     |   Personal    |
+| ELK Server  |    Yes     |   72.94.158.224    |
 
 ### Elk Configuration
 
